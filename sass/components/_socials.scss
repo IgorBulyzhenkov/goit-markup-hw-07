@@ -1,0 +1,26 @@
+.soc-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.soc-list__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.soc-list__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    fill: var(--first-icon-color);
+    transition: var(--time-cubic-bezier);
+}
+
+.soc-list__link:hover,
+.soc-list__link:focus {
+    background-color: var(--accent-color);
+    fill: var(--second-icon-color);
+}

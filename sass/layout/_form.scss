@@ -1,0 +1,97 @@
+.form-application {
+    margin: 40px 40px;
+}
+
+.form-application__title {
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: var(--first-modal-text-color);
+    margin-bottom: 12px;
+}
+
+.form-application__field {
+    position: relative;
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    transition: var(--time-cubic-bezier);
+}
+
+.form-application__label {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    margin-top: 10px;
+}
+
+.form-application__input {
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    padding-left: 42px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transition: var(--time-cubic-bezier);
+    margin-top: 4px;
+}
+
+.form-application__input:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.form-application__icon:focus {
+    border-color: var(--accent-color);
+}
+
+.form-application__icon {
+    position: absolute;
+    left: 12px;
+    bottom: 50%;
+    transition: fill var(--time-cubic-bezier);
+    transform: translateY(50%);
+}
+
+.form-application__input:focus+.form-application__icon {
+    fill: var(--accent-color);
+}
+
+.form-application__coments {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    margin-top: 10px;
+}
+
+.form-application__textarea {
+
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
+    resize: none;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    width: 448px;
+    height: 120px;
+    transition: var(--time-cubic-bezier);
+    padding: 12px 16px;
+    margin-top: 4px;
+}
+
+.form-application__textarea:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.form-application__field .form-application__textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}

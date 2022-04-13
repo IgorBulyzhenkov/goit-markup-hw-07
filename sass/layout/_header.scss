@@ -1,0 +1,20 @@
+.header {
+    min-height: 80px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header>.container,
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    margin-right: 93px;
+}
+
+.logo__span {
+    color: var(--span-logo-color);
+}
