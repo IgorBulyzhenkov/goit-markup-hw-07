@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
 
   <body>
@@ -518,86 +519,86 @@
       </div>
     </footer>
     <!-- MODAL -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
       <div class="modal">
         <button data-modal-close class="modal__btn">
-          <svg width="11" height="11" class="madal__icon">
+          <svg width="11" height="11" class="modal__icon">
             <use href="./img/icons.svg#icon-vector"></use>
           </svg>
         </button>
         <form class="form js-speaker-form">
-          <div class="form__application">
-            <b class="form__application--title"
+          <div class="form-application">
+            <b class="form-application__title"
               >Оставьте свои данные, мы вам перезвоним</b
             >
 
-            <label for="name" class="form__label form__label--top">Имя</label>
-            <div class="form__application--field">
+            <label for="name" class="form-application__label">Имя</label>
+            <div class="form-application__field">
               <input
                 type="text"
                 name="name"
                 id="name"
-                class="form__application--input"
+                class="form-application__input"
               />
-              <svg width="18" height="18" class="form__application--icon">
+              <svg width="18" height="18" class="form-application__icon">
                 <use href="./img/icons.svg#icon-person-black"></use>
               </svg>
             </div>
 
-            <label for="tel" class="form__label">Телефон</label>
-            <div class="form__application--field">
+            <label for="tel" class="form-application__label">Телефон</label>
+            <div class="form-application__field">
               <input
                 type="text"
                 name="tel"
                 id="tel"
-                class="form__application--input"
+                class="form-application__input"
               />
-              <svg width="18" height="18" class="form__application--icon">
+              <svg width="18" height="18" class="form-application__icon">
                 <use href="./img/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
 
-            <label for="email" class="form__label">Почта</label>
-            <div class="form__application--field">
+            <label for="email" class="form-application__label">Почта</label>
+            <div class="form-application__field">
               <input
                 type="text"
                 name="email"
                 id="email"
-                class="form__application--input"
+                class="form-application__input"
               />
-              <svg width="18" height="18" class="form__application--icon">
+              <svg width="18" height="18" class="form-application__icon">
                 <use href="./img/icons.svg#icon-email-black"></use>
               </svg>
             </div>
 
-            <div class="form__application--coments">
-              <label for="coments" class="form__label">Коментарий</label>
+            <div class="form-application__coments">
+              <label for="coments" class="form-application__label">Коментарий</label>
               <textarea
                 name="coments"
                 id="coments"
                 rows="10"
                 placeholder="Введите текст"
-                class="form__application--textarea"
+                class="form-application__textarea"
               ></textarea>
             </div>
-
-            <div class="form__license">
-              <label class="form__license--label">
+               <!-- license -->
+            <div class="form-license">
+              <label class="form-license__label">
                 <input
                   type="checkbox"
                   name="checkbox"
-                  class="form__license--checkbox"
+                  class="form-license__checkbox"
                 />
-                <svg width="16" height="15" class="form__license--icon">
+                <svg width="16" height="15" class="form-license__icon">
                   <use href="./img/icons.svg#icon-check"></use>
                 </svg>
                 Соглашаюсь с рассылкой и принимаю
-                <a href="" class="form__license--link">Условия договора</a>
+                <a href="" class="form-license__link">Условия договора</a>
               </label>
             </div>
 
-            <div class="form__btn">
-              <button type="submit" class="modal-button button">Отправить</button>
+            <div class="modal-btn">
+              <button type="submit" class="modal-btn__btn button">Отправить</button>
             </div>
           </div>
         </form>
