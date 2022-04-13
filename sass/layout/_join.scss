@@ -22,7 +22,8 @@
     fill: var(--second-icon-color);
 }
 
-.join-list__socials .soc-list__link:hover {
+.join-list__socials .soc-list__link:hover,
+.join-list__socials .soc-list__link:focus {
     background-color: var(--accent-color);
 }
 
