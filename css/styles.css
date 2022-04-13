@@ -49,6 +49,13 @@ body {
     margin-right: auto;
 }
 
+.logo {
+    color: var(--first-logo-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
 
 /* --------HEADER-------- */
 
@@ -60,17 +67,12 @@ body {
 }
 
 .header>.container,
-.header__nav {
+.nav {
     display: flex;
     align-items: center;
 }
 
-.logo {
-    color: var(--first-logo-color);
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+.nav__logo {
     margin-right: 93px;
 }
 
@@ -78,16 +80,17 @@ body {
     color: var(--span-logo-color);
 }
 
-.header__item:not(:last-child) {
+/* ------------Menu------------- */
+
+.menu__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.header__list {
+.menu__list {
     display: flex;
-    margin-left: auto;
 }
 
-.header__link {
+.menu__link {
     color: var(--second-text-color);
     font-weight: 500;
     line-height: 1.14;
@@ -95,22 +98,45 @@ body {
     transition: var(--time-cubic-bezier);
 }
 
-.header__link--current {
+.menu__link--current {
     color: var(--accent-color);
 }
 
-.header__icon {
+.menu__icon {
     margin-right: 10px;
     fill: currentColor;
 }
 
-.header__link:hover,
-.header__link:focus {
+.menu__link:hover,
+.menu__link:focus {
     color: var(--accent-color);
 }
 
-.header__tel,
-.header__mail {
+.menu__link--current {
+    position: relative;
+    color: var(--accent-color);
+}
+
+.menu__link--current::after {
+    content: " ";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    display: block;
+    top: 46px;
+}
+
+/*----------------- Contact-------------- */
+
+.contact__list {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact__tel,
+.contact__mail {
     display: flex;
     color: var(--first-text-color);
     font-weight: 500;
@@ -120,18 +146,23 @@ body {
     transition: var(--time-cubic-bezier);
 }
 
-.header__tel {
+.contact__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contact__tel {
     margin-left: 50px;
 }
 
-.header__tel:hover,
-.header__tel:focus {
+.contact__tel:hover,
+.contact__tel:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
 }
 
-.header__mail:hover,
-.header__mail:focus {
+.contact__mail:hover,
+.contact__mail:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
 }
@@ -381,7 +412,7 @@ body {
     position: relative;
 }
 
-.galary__app--text {
+.galary__text {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -548,8 +579,6 @@ body {
 .footer__span {
     color: var(--second-logo-color);
 }
-
-.footer__address {}
 
 .footer__list {
     margin-top: 20px;
