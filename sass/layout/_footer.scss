@@ -3,10 +3,10 @@
     min-height: 252px;
     padding-top: 60px;
     padding-bottom: 60px;
-}
 
-.footer>.container {
-    display: flex;
+    .container {
+        display: flex;
+    }
 }
 
 .footer-nav__span {
@@ -24,26 +24,18 @@
 .footer-list__link {
     color: var(--primery-text-color);
     font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font(14px, null, 1.71, null);
 }
 
 .footer-list__mail,
 .footer-list__tel {
     color: var(--second-address-color);
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font(14px, null, 1.71, null); 
     transition: var(--time-cubic-bezier);
-}
 
-.footer-list__mail:hover,
-.footer-list__mail:focus {
-    color: var(--accent-color);
-}
-
-.footer-list__tel:hover,
-.footer-list__tel:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }

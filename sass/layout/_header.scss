@@ -3,12 +3,11 @@
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
-}
 
-.header>.container,
-.nav {
-    display: flex;
-    align-items: center;
+    .container,
+    .nav {
+        @include flex(flex, center, null);
+    }
 }
 
 .nav-logo {

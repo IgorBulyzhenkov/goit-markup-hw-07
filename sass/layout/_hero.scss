@@ -10,25 +10,23 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    &__title {
+        color: var(--primery-text-color);
+        @include font(44px, 900, 1.36, 0.06em);
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 696px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    
+    &__button {
+        margin-left: auto;
+        margin-right: auto;
+        height: 50px;
+        min-width: 200px;
+    }
 }
 
-.hero__title {
-    color: var(--primery-text-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    max-width: 696px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-}
-
-.hero__button {
-    margin-left: auto;
-    margin-right: auto;
-    height: 50px;
-    min-width: 200px;
-}

@@ -3,29 +3,28 @@
 }
 
 .join__title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(14px, 700, 1.14, 0.03em);
     text-transform: uppercase;
     color: var(--primery-text-color);
 }
 
 .join-list__socials {
     margin-top: 20px;
+
+    .soc-list__link {
+        background-color: var(--first-footer-social-color);
+        fill: var(--second-icon-color);
+
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
+    }
 }
 
-.join-list__socials .soc-list__link {
-    background-color: var(--first-footer-social-color);
-    fill: var(--second-icon-color);
-}
 
-.join-list__socials .soc-list__link:hover,
-.join-list__socials .soc-list__link:focus {
-    background-color: var(--accent-color);
-}
+
+
 
 /* 
 .join-list__item {

@@ -5,13 +5,16 @@
 
 .contact__tel,
 .contact__mail {
-    display: flex;
+    @include flex(flex, center, null);
     color: var(--first-text-color);
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    align-items: center;
+    @include font(null, 500, 1.14, 0.02em);
     transition: var(--time-cubic-bezier);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        fill: var(--accent-color);
+    }
 }
 
 .contact__icon {
@@ -21,16 +24,4 @@
 
 .contact__tel {
     margin-left: 50px;
-}
-
-.contact__tel:hover,
-.contact__tel:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-}
-
-.contact__mail:hover,
-.contact__mail:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
 }

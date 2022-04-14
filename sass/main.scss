@@ -1,5 +1,8 @@
 @import "./base/common";
 @import "./base/reset";
+@import "./utils/mixins";
+@import "./utils/veriables";
+@import "./utils/hidden";
 
 @import "./components/container"; 
 @import "./components/logo";
@@ -25,5 +28,4 @@
 @import "./layout/form";
 
 
-@import "./utils/root";
-@import "./utils/hidden";
+
