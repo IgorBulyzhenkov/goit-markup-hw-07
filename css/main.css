@@ -250,7 +250,11 @@ img {
   border-bottom: 1px solid #ECECEC;
 }
 
-.header .container,
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
 .header .nav {
   display: flex;
   align-items: center;

@@ -4,7 +4,9 @@
     padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
 
-    .container,
+    .container{
+        @include flex(flex, center, null);
+    }
     .nav {
         @include flex(flex, center, null);
     }
