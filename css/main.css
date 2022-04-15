@@ -97,6 +97,10 @@ img {
   line-height: 1.19;
 }
 
+.logo__span {
+  color: var(--span-logo-color);
+}
+
 .button {
   color: var(--primery-text-color);
   background-color: var(--accent-color);
@@ -262,10 +266,6 @@ img {
 
 .nav-logo {
   margin-right: 93px;
-}
-
-.logo__span {
-  color: var(--span-logo-color);
 }
 
 .filters-list {
